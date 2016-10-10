@@ -1,3 +1,5 @@
+// Credit to http://phrogz.net/lazy-cartesian-product for making this so easy to understand
+
 module.exports = function() {
 	this.product = function() {
 		var sets = arguments[0];
