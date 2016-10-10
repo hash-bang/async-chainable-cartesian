@@ -1,0 +1,31 @@
+{
+  "name": "async-chainable-cartesian",
+  "version": "0.0.0",
+  "description": "Plugin for async-chainable to provide Cartesian iteration (all combinations of multiple arrays)",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "async-chainable": "^2.1.1",
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hash-bang/async-chainable-cartesian.git"
+  },
+  "keywords": [
+    "async",
+    "async-chainable",
+    "cartesian",
+    "iteration"
+  ],
+  "author": "Matt Carter <m@ttcarter.com> (https://github.com/hash-bang)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hash-bang/async-chainable-cartesian/issues"
+  },
+  "homepage": "https://github.com/hash-bang/async-chainable-cartesian#readme"
+}
