@@ -2,7 +2,7 @@ var async = require('async-chainable');
 var asyncCartesian = require('..');
 var expect = require('chai').expect;
 
-describe('Basic test', function() {
+describe('asyncChainableCartesian.product(set1, set2)', function() {
 
 	var vals = [];
 	var length;
