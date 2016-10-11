@@ -8,11 +8,10 @@ describe('asyncChainableCartesian.compare(set)', function() {
 	var length;
 
 	before(function(done) {
-		var s = ['foo', 'bar', 'baz', 'quz', 'flarp'];
-
 		async()
 			.use(asyncCartesian)
-			.compare(s, function(next, value, index, max) {
+			.set('set', ['foo', 'bar', 'baz', 'quz', 'flarp'])
+			.compare('set', function(next, value, index, max) {
 				if (length === undefined) length = max;
 				vals.push({v: value, i: index, m: max});
 				next();

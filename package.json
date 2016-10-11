@@ -4,9 +4,9 @@
   "description": "Plugin for async-chainable to provide Cartesian iteration (all combinations of multiple arrays)",
   "main": "index.js",
   "devDependencies": {
-    "async-chainable": "^2.2.0",
+    "async-chainable": "^2.2.1",
     "chai": "^3.5.0",
-    "mocha": "^3.1.1"
+    "mocha": "^3.1.2"
   },
   "scripts": {
     "test": "mocha"
