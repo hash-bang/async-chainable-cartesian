@@ -76,7 +76,7 @@ module.exports = function() {
 				if (err) return next(err);
 				next(null, true); // Have to return true to keep iterating
 			}, [set[a], set[b]], index, maxLength);
-		}, parentAsync._execute);
+		}, parentAsync._options.limit, parentAsync._execute);
 
 		return this;
 	};
