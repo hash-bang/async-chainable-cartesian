@@ -39,12 +39,11 @@ Unlike `product()` this function assumes that the result is symmetric - i.e. com
 
 
 ```javascript
-var set = ['foo', 'bar', 'baz'];
-
 asyncChainable()
 	.use(asyncChainableCartesian)
 
-	.compare(set, function(next, value, index, max) {
+	.set('set', ['foo', 'bar', 'baz'])
+	.compare('set', function(next, value, index, max) {
 		// Will output for values [foo,bar], [foo,baz], [bar,baz]
 		console.log('Comparison', index + '/' + max, value[0], value[1]);
 		next();
